@@ -51,7 +51,7 @@ def mission_proceed(sample_array, time_till_detonation):
 		checked.append(sample_array[index])
 		index += 1
 
-		estimated_number_of_families = estimation_equation(len(checked), 0.7)
+		estimated_number_of_families = estimation_equation(len(checked), 0.7) #Arbitrary probability estimate of 0.7. To tune.
 
 	return estimated_number_of_families
 
